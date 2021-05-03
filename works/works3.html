@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../works/css/works1.css">
+  <link rel="shortcut icon" href="../images/fabicon/icons8-dog-64.png" />
+</head>
+
+<body>
+  <div class="contents">
+  <div class="cp_fullscreenmenu">
+      <input type="checkbox" id="toggle" />
+      <label class="hamburger" for="toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <div class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://musanengneerblog.com/">Blog</a></li>
+        </ul>
+      </div>
+  </div>
+  </div>
+        <section id="concept" class="concept">
+            <div class="concept-area">
+              <h1 class="works-name">Works</h1>
+              <h2 class="title">Make VR</h2>
+                <div class="works-image">
+                  <img class="work-img" src="../works/works-png/MAKEVR.png" alt="8HOURS">
+                </div>
+                <div class="site-gaiyo">
+                    <span class="site-ga">サイトの概要</span>
+                    <div class="saite">
+                      <h2 class="text">サイトタイトル：「Make VR」</h2>
+                      <a class="saite-title" href="http://muweb.sakura.ne.jp/make-vr/">http://muweb.sakura.ne.jp/make-vr/</a>
+                    </div>
+                    <div class="tool">
+                      <h2 class="text">使用ツール</h2>
+                      <img class="tool-img" src="../works/images/icons8-adobe-photoshop-96.png" alt="PS">
+                      <img class="tool-img" src="../works/images/icons8-adobe-dreamweaver-96.png" alt="">
+                    </div>
+                    <div class="tanto">
+                      <h2 class="text">担当</h2>
+                      <h2 class="text">デザイン・コーティング</h2>
+                    </div>
+                    <div class="tanto">
+                      <h2 class="text">制作期間</h2>
+                      <h2 class="text">1週間</h2>
+                    </div>
+                    <div class="tanto">
+                      <h2 class="text">サイトの目的</h2>
+                      <h2 class="text">クリエイティブな業界で働いている人のイベント告知</h2>
+                    </div>
+                    <div class="tanto">
+                      <h2 class="text">ターゲット層</h2>
+                      <h2 class="text">クリエイティブ業界に携わっている会社員や役員、フリーランスなど</h2>
+                    </div>
+                </div>
+                <div class="site-img">
+                  <h2 class="text">home画面イメージ</h2>
+                  <img class="img-pc" src="../works/works-png/muweb.sakura.ne.jp_make-vr_.png" alt="">
+                </div>
+                <div class="site-img-sp">
+                  <h2 class="text">home画面イメージ-SP</h2>
+                  <img class="img-sp" src="../works/works-png/muweb.sakura.ne.jp_make-vr_ (1).png" alt="">
+                </div>
+            </div>
+        </section>
+        <footer>
+                <div class="contact-area">
+                  <div class="title-heading">
+                    <h1 class="works-name">CONTACT</h2>
+                  </div>
+                  <div class="section-lead">
+                    <p class="contact-text">お問い合わせは、SNSから承っています。お気軽に連絡ください。</p>
+                  </div>
+                <div class="section-body contact">
+                  <ul class="contact-list">
+                    <li class="contact-item">
+                      <a class="contact-link" href="https://twitter.com/" target="_blank"><img class="contact-image"
+                          src="../images/sns-aicon/icons8-twitter-128.png" alt=""></a>
+                    </li>
+                    <li class="contact-item">
+                      <a class="contact-link" href="https://www.facebook.com/" target="_blank"><img class="contact-image"
+                          src="../images/sns-aicon/icons8-facebook-200.png" alt=""></a>
+                    </li>
+                  </ul>
+                </div>
+                  <div class="copy-oya">
+                    <small class="copy-light">Copyright© Takuya Yamamura Portfolio. All Rights Reserved.</small>
+                  </div>
+                  <div id="page_top">
+                    <a href="#"><img class="top-wan" src="../works/images/logo-top.png" alt=""></a>
+                  </div>
+                </div>
+          </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
+            <script type='text/javascript' src="js/script.js"></script>
+            <script>
+              jQuery(function() {
+                  var pagetop = $('#page_top');   
+                  pagetop.hide();
+                  $(window).scroll(function () {
+                      if ($(this).scrollTop() > 500) {  //500pxスクロールしたら表示
+                          pagetop.fadeIn();
+                      } else {
+                          pagetop.fadeOut();
+                      }
+                  });
+                  pagetop.click(function () {
+                      $('body,html').animate({
+                          scrollTop: 0
+                      }, 1000); //1秒かけてトップへ移動
+                      return false;
+                  });
+              });
+            </script>
+</body>
+</html>
+
